@@ -1,0 +1,42 @@
+{
+"$id": "config.json",
+"$schema": "http://json-schema.org/draft-07/schema#",
+"type": "object",
+"properties": {
+    "title": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 350
+  },
+  "authors": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 350
+  },
+  "description": {
+    "type": "string"
+  },
+  "personalreview": {
+    "type": "string"
+  },
+  "category": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 350
+  },
+  "thumbnail": {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 500
+  },
+  "username": {
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 30
+  }
+},
+  "additionalProperties": false,
+  "required": [
+    "title", "username"
+  ]
+}
